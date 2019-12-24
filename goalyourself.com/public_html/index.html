@@ -75,14 +75,19 @@
 
   function testAPI() {
     FB.api('/me', function(response) {
+      hideFbLoginButton();
       console.log('testAPI');
       console.log(response);
       document.getElementById('response_name').innerHTML = response.name;
       document.getElementById('response_id').innerHTML = response.id;
     });
-
-    // Hide the Facebook login button
   }
+
+  function hideFbLoginButton() {
+    var x = document.getElementById("my_fb_login_button");
+    x.style.display = "none";
+  }
+
 </script>
 
 <!--
@@ -91,11 +96,17 @@
   the FB.login() function when clicked.
 -->
 <hr/>
-<div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-auto-logout-link="true" data-use-continue-as="true" onlogin="checkLoginState();"></div>
+<div id="my_fb_login_button" class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="true" onlogin="checkLoginState();"></div>
 <hr/>
 
 <div id="status">
 </div>
+
+
+<!-- backup login button, that has the "logout" style to it -->
+<hr/>
+<div id="my_fb_login_button2" class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-auto-logout-link="true" data-use-continue-as="true" onlogin="checkLoginState();"></div>
+
 
 </body>
 </html>
