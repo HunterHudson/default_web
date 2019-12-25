@@ -1,0 +1,6 @@
+---
+the Azure instance in USEAST, but should be in USEAST2?
+
+---
+the mongodb is installed from https://cloud.mongodb.com/v2/5e02aca3014b76c10d5c5a05#clusters
+the connect string, from bash, is: mongo "mongodb+srv://cluster0-wp6ak.azure.mongodb.net/test"  --username dbroothh
