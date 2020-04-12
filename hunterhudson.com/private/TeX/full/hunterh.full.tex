@@ -1,0 +1,160 @@
+% !TEX TS-program = pdflatexmk
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{\parskip}%
+}%
+\item[]}{\end{list}}
+
+\documentclass[margin]{res} 
+
+% the margin option causes section titles to appear to the left of body text 
+\textwidth=5.2in % increase textwidth to get smaller right margin
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+\begin{document} 
+
+\name{Hunter Hudson -- hunter@hunterhudson.com\\[12pt]} % the \\[12pt] adds a blank line after name
+  
+\begin{resume} 
+ 
+%\section{Objective} 
+%.h
+
+\section{Experience}
+ {\bf Head of Software} \hfill 02/2016 - Present\\
+ Northrop Grumman, Aerospace Sector\\
+ \begin{itemize} \itemsep -2pt 
+ \item Accountable for 490M and Responsible for 160M of annual contract execution.
+ \item Leader of 1,500 software engineers in Aerospace Sector delivering across a large diverse portfolio of manned aircraft (including B-2, B-21, E-2), unmanned aircraft (including Globalhawk, Triton, NATO AGS, FireScout, Fire Bird, X-47B), spacecraft (including James Webb Space Telescope, AEHF, GPS III, SIBERS), Directed Energy systems (including ALMDS), Missile Systems (including Ground Based Strategic Deterrent), and many research engagements (including DARPA, AFRL).
+ \item Accountable for entire scope of the software problem domain, including design, development, deployment, and operations of systems that span sensor processing, data fusion, signal intelligence, ground control, flight control, mission control, advanced human decision aids, and advanced mission automation.
+ \item Distributed Autonomy Responsive Control
+ \item DARPA SafeDocs
+ \item DARPA GAPS
+ \item Accountable for multiple proposal activities. 1's to 100's millions in both fixed price and time and materials contracts.
+ \item Successfully moved major aerospace programs from waterfall to modern agile engineering process and tools.
+ \item Built Cyber Security, Cognitive Autonomy, Engineering Fundamentals communities of practice.
+ \item Multi-domain Command and Control. Integration of Space, Airspace, and Cyberspace.
+ \end{itemize}
+
+ {\bf Senior Manager of Software Development} \hfill 05/2014 - 02/2016\\
+ Amazon, AWS EC2 Networking and Prime Air UAV teams\\
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Rationalized the AWS EC2 networking control plane architecture of 6 overlapping distributed systems into a simpler set of shared services.
+ \item Lead team through re-write of networking dataplane achieving performance gains that avoided a \$64 million network scaling project.
+ \item Lead Prime Air UAV platform software effort.
+ \end{itemize}
+
+ {\bf Senior Director of Product Development} \hfill 04/2012 - 05/2014\\
+ F5 Networks, Seattle, WA
+ \begin{itemize} \itemsep -2pt
+ \item Accountable for establishing and delivering on the F5 cloud services and manageability strategy, launching a new cloud management product family: BIG-IQ
+ \item Established and championed a new customer based planning, UX design, engineering, and business focus inside F5 Networks.
+ \item Established and lead the F5 Networks software engineering office in Bellevue.
+ \end{itemize}
+ 
+ {\bf Architect} \hfill 2011 - 2012\\
+ Microsoft Trustworthy Computing, Redmond, WA
+ \begin{itemize} \itemsep -2pt
+ \item Established the Microsoft Cloud Security Strategy.
+ \end{itemize}
+ 
+{\bf Director of Engineering} \hfill 2010 - 2011\\
+ Microsoft Applied Robotics Solutions, Redmond, WA
+ \begin{itemize} \itemsep -2pt
+ \item Lead the application of machine learning to computer vision based mobile robot navigation. Included active sensing of the environment, automated learning feedback loops, and simulated and physical applications.
+ \item Accoutable for all Engineering Fundamentals of Security, Performance, Monitoring, Reliability, and Testing for various robotic platforms, web services, and mobile clients.
+ \end{itemize}
+ 
+{\bf Director of Development and Founding Member} \hfill 2006 - 2010\\
+ Microsoft Windows Azure, Redmond, WA
+ \begin{itemize} \itemsep -2pt
+ \item Founded the Windows Azure Cloud Management Team and scaled team and services to a global presence.
+ \item Engineering Fundamentals contributions spanned continuous integration, security, performance, reliability, change management, configuration management, root cause analysis, disaster recovery, and privacy.
+ \end{itemize}
+
+{\bf Development Manager} \hfill 2004 - 2006\\
+ Microsoft Windows Core OS Division, Redmond, WA
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Established and deployed Quality Gates across Windows Division.
+ \item Classified the root causes behind all past MSRC security issues and set future security investment areas.
+ \item Lead 55 person virtual-team effort to make 150,000 automated and 100,000 manual defensive code changes to the Windows codebase.
+ \item Awarded Microsoft Chairman's Award for Engineering Excellence for the industry wide impact of this work.
+ 
+ \end{itemize}
+
+ {\bf Research Software Design Engineering Lead} \hfill 2003 - 2004\\
+ Microsoft Programmer Productivity Research Center, Redmond, WA
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Pioneered machine automated analysis of Windows application crash and hang reports. Fixed 50\% of the volume of the hangs in IE, Explorer, Outlook, Outlook Express, PowerPoint, and Frontpage.
+ \end{itemize}
+ 
+ {\bf Software Design Engineer in Test} \hfill 1999 - 2003\\
+ Microsoft Windows Shell Team, Redmond, WA
+ \begin{itemize} \itemsep -2pt
+ \item Development and deployment of static code analysis pattern recognition tools.
+ \end{itemize}
+ 
+ {\bf CEO and Founder} \hfill 1997 - 1999\\
+ Hunter Hudson Consulting, Seattle, WA
+ \begin{itemize} \itemsep -2pt
+ \item Machine learning analysis of players' performances in NFL hockey games.
+ \end{itemize}
+  
+ {\bf Research Software Design Engineer} \hfill 1996 - 1998\\
+ Quest Integrated, Inc., Seattle, WA 
+ \begin{itemize} \itemsep -2pt  % reduce space between items 
+ \item Developed the world's leading thermal analysis microscope.
+ \end{itemize}
+
+ {\bf Research Assistant} \hfill 1995 - 1996\\
+ Dr. Haralick at University of Washington, Seattle, WA
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Computer vision based inspection systems.
+\end{itemize}
+ 
+ {\bf Biomedical Engineering Intern} \hfill 1993 - 1994\\
+ Vanderbilt Anesthesiology Dept, Nashville, TN
+% \begin{itemize} \itemsep -2pt  % reduce space between items
+ %\item Analysis of past medical records correlating drugs, doctors, and patient mortality.
+%\end{itemize}
+
+\section{Education} 
+%{\bf Continuing Education} Online Coursework \hfill 2017
+%\begin{itemize}
+%\item Coursera: Machine Learning, Stanford University, 2017
+%\end{itemize}
+
+{\bf MSEE, Electrical Engineering,} Computer Vision Based Inspection Systems \hfill 1997\\
+University of Washington, Seattle, WA
+% \begin{itemize} \itemsep -2pt  % reduce space between items
+% \item Vision Based Inspection Systems Thesis project was an embedded system that I later shipped as commercial product.
+ % Highlight from R\&D to shipping. 
+% \end{itemize}
+
+{\bf BE, Electrical Engineering and Biomedical Engineering} \hfill 1995\\
+Vanderbilt University, Nashville, TN
+
+%\section{Honors \&\\Awards} 
+%{\bf Microsoft Engineering Excellence Award} \hfill 2009\\
+%Automated Watson Crashdump Analysis
+%
+%{\bf Microsoft Chairman's Award for Engineering Excellence} \hfill 2006\\
+%Static Code Analysis
+
+\section{Clearance} 
+{\bf TS/SCI}
+
+\end{resume} 
+\end{document} 
+
+
+
